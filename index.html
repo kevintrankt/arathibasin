@@ -32,36 +32,48 @@
             margin: auto;
         }
 
-        .grid-container {
-            display: grid;
-            grid-column-gap: 50px;
-            grid-template-columns: auto auto;
-            padding-top: 50px;
-            grid-template-columns: repeat(2, 1fr);
 
-        }
+        @media only screen and (min-width: 1280px) {
+            .grid-container {
+                display: grid;
+                grid-column-gap: 50px;
+                grid-template-columns: auto auto;
+                padding-top: 50px;
+                grid-template-columns: repeat(2, 1fr);
 
-        .grid-container>div {
-            /* background-color: rgba(255, 255, 255, 0.8); */
-            padding: 20px 0;
-            font-size: 30px;
-        }
+            }
 
-        .item1 {
-            grid-column-start: 1;
-            grid-column-end: 1;
-            text-align: center;
+            .grid-container>div {
+                /* background-color: rgba(255, 255, 255, 0.8); */
+                padding: 20px 0;
+                font-size: 30px;
+            }
 
-        }
+            .item1 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                text-align: center;
 
-        .item1 img {
-            max-width: 40vw;
-        }
+            }
 
-        .item2 {
-            grid-column-start: 2;
-            grid-column-end: 2;
-            text-align: left;
+            .item1 img {
+                max-width: 40vw;
+            }
+
+            .item2 {
+                grid-column-start: 2;
+                grid-column-end: 2;
+                text-align: left;
+            }
+
+
+            #chat {
+                padding-top: 60px;
+                padding-right: 50px;
+
+            }
+
+
         }
 
         .item2 p {
@@ -88,10 +100,20 @@
             color: #38FF00;
         }
 
-        #chat {
-            padding-top: 60px;
-            padding-right: 50px;
+        .grid-container {
+            padding-top: 50px;
+        }
 
+        .item1 img {
+            display: block;
+            margin: auto;
+            max-height: 40vh;
+            max-width: 80vw;
+        }
+
+        .item2 {
+            padding-right: 10vw;
+            padding-left: 10vw;
         }
     </style>
 </head>
