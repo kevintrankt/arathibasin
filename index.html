@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arathi Basin - Snowgears</title>
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = t.forceSSL || "https:" === document.location.protocol, a = document.createElement("script"); a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(a, n); for (var o = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++)heap[p[c]] = o(p[c]) };
+        heap.load("3102461503");
+    </script>
+
+    <link rel="icon" type="image/png" href="img/icon.ico">
+
+    <style>
+        body {
+            background-image: url("img/bg.png");
+        }
+
+        #logo {
+            /* background-color: red; */
+            padding-top: 100px;
+
+        }
+
+        #logo img {
+            max-width: 700px;
+            display: block;
+            margin: auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-column-gap: 50px;
+            grid-template-columns: auto auto;
+            padding-top: 50px;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .grid-container>div {
+            /* background-color: rgba(255, 255, 255, 0.8); */
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            text-align: center;
+
+        }
+
+        .item1 img {
+            max-width: 40vw;
+        }
+
+        .item2 {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            text-align: left;
+        }
+
+        .item2 p {
+            font-family: Helvetica;
+            font-size: 20px;
+            letter-spacing: 1.74px;
+            color: white;
+            margin: 5px;
+        }
+
+        .blocker {
+            height: 15px;
+        }
+
+        #joined-channel {
+            color: #B89ACA;
+        }
+
+        #orange {
+            color: #FF8900;
+        }
+
+        #green {
+            color: #38FF00;
+        }
+
+        #chat {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="logo"><img src="img/logo.png"></div>
+
+    <div class="grid-container">
+        <div class="item1"><img src="img/map.png"></div>
+        <div class="item2">
+
+            <div id="chat">
+                <p id="joined-channel">Joined Channel: [1. Minecraft Maps]</p>
+                <p>[snowgears] says: I made a domination game
+                    based on the World of Warcraft battleground!</p>
+                <p>[snowgears] says: You can check it out here:
+                    <a id="orange" href="https://www.spigotmc.org/resources/arathibasin-a-domination-mini-game.27977/"
+                        target="_blank">[Minecraft Arathi
+                        Basin]</a>!</p>
+
+                <p>[snowgears] says: (you’ll need to sign up)
+                </p>
+                <p>[snowgears] says: Everything is set up for you
+                    to play the game immediately after setup.</p>
+
+                <p class="blocker"> </p>
+                <p>[snowgears] says: You can join my Discord
+                    server, too!</p>
+                <p>[snowgears] says: <a id="green" href="https://discord.gg/CgzrqxW" target="_blank">[Snowgears Discord
+                        Server]</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
